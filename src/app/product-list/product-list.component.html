@@ -15,9 +15,13 @@
   <button (click)="share()">
     共有
   </button>
+  
+  <app-product-alerts
+    [product]="product"
+    (notify)="onNotify()">
+  </app-product-alerts>
 
 </div>
-
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
